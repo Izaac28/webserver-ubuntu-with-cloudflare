@@ -1,0 +1,692 @@
+<![CDATA[<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangga Nugraha | Portfolio & Biodata</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Grid & Glow Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></></span>
+                <span class="logo-text">Rangga<span class="accent">.dev</span></span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Keahlian</a>
+                <a href="#projects" class="nav-link">Proyek</a>
+                <a href="#interests" class="nav-link">Minat</a>
+                <a href="#contact" class="nav-link btn-contact">Kontak</a>
+            </nav>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <!-- Moon Icon (for dark mode) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <!-- Sun Icon (for light mode) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <nav class="mobile-menu">
+            <a href="#home" class="mobile-link">Beranda</a>
+            <a href="#about" class="mobile-link">Tentang</a>
+            <a href="#skills" class="mobile-link">Keahlian</a>
+            <a href="#projects" class="mobile-link">Proyek</a>
+            <a href="#interests" class="mobile-link">Minat</a>
+            <a href="#contact" class="mobile-link mobile-btn-contact">Hubungi Sayaa</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content reveal reveal-fade-scale">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">NOC Engineer & Student</span>
+                    </div>
+                    <h1 class="hero-title">Halo, Saya <br><span class="name-highlight">Rangga Nugraha</span></h1>
+                    <div class="typing-container">
+                        <span class="typing-prefix">I'm a-  </span>
+                        <span id="typing-text" class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Menjembatani infrastruktur jaringan yang andal dengan performa komputasi tinggi. Berfokus pada stabilitas sistem, konfigurasi jaringan, dan eksplorasi teknologi masa depan.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn btn-primary">
+                            <span>Jelajahi</span>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
+                        </a>
+                        <a href="#skills" class="btn btn-secondary">Keahlian</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-scale">
+                    <div class="profile-glow-wrapper">
+                        <div class="profile-glow-ring"></div>
+                        <div class="profile-glow-ring-outer"></div>
+                        <div class="profile-placeholder">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side - Profile Photo -->
+                                    <div class="flip-card-front">
+                                        <img src="subaru.jpg" alt="Profile Photo" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="avatar-graphic" style="display: none;">
+                                            <i data-lucide="cpu" class="avatar-icon"></i>
+                                            <div class="tech-lines">
+                                                <span class="line l1"></span>
+                                                <span class="line l2"></span>
+                                                <span class="line l3"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Back Side - Additional Image/Content -->
+                                    <div class="flip-card-back">
+                                        <img src="subaru.jpg" alt="Profile Back" class="profile-photo-back">
+                                        <div class="back-content">
+                                            <i data-lucide="cpu" class="back-icon"></i>
+                                            <p class="back-text">NOC Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <i data-lucide="chevrons-down" class="scroll-icon"></i>
+            </div>
+        </section>
+
+        <!-- Tentang Saya (About) Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-subtitle">// 01. BIODATA</span>
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text-card reveal reveal-left">
+                        <div class="card-header-tech">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">about_me.sh</span>
+                        </div>
+                        <div class="card-body-tech">
+                            <p class="about-paragraph">
+                                Saya adalah seorang mahasiswa aktif program studi <strong class="accent">Sistem Komputer</strong> di <span class="school-placeholder">Universitas Pamulang</span> yang memiliki ketertarikan mendalam pada integrasi perangkat keras dan infrastruktur jaringan.
+                            </p>
+                            <p class="about-paragraph">
+                                Di samping kesibukan akademis, saya mendedikasikan diri sebagai staf di <strong class="accent">Network Operation Center (NOC)</strong>. Peran ini menempa saya untuk selalu sigap dalam memantau stabilitas jaringan, melakukan troubleshooting secara real-time, serta memastikan uptime layanan berada pada level optimal.
+                            </p>
+                            <p class="about-paragraph">
+                                Dengan kombinasi latar belakang akademis Sistem Komputer dan pengalaman praktis di industri jaringan, saya selalu bersemangat untuk mempelajari teknologi baru, mengoptimalkan sistem, dan merakit infrastruktur komputasi yang efisien.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-stats reveal reveal-right">
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="server" class="stat-icon"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">NOC</h3>
+                                <p class="stat-label">Operation Staff</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="graduation-cap" class="stat-icon"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">S1</h3>
+                                <p class="stat-label">Sistem Komputer</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="activity" class="stat-icon"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">24/7</h3>
+                                <p class="stat-label">Monitoring Mindset</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian Teknis (Skills) Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-subtitle">// 02. CAPABILITIES</span>
+                    <h2 class="section-title">Keahlian Teknis</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Skill Item 1 -->
+                    <div class="skill-card reveal reveal-up">
+                        <div class="skill-info">
+                            <div class="skill-title-group">
+                                <i data-lucide="shield-alert" class="skill-icon"></i>
+                                <span class="skill-name">Network Troubleshooting</span>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 70%"></div>
+                        </div>
+                        <p class="skill-desc">Analisis masalah jaringan, packet sniffing, dan pemulihan konektivitas cepat.</p>
+                    </div>
+
+                    <!-- Skill Item 2 -->
+                    <div class="skill-card reveal reveal-up">
+                        <div class="skill-info">
+                            <div class="skill-title-group">
+                                <i data-lucide="router" class="skill-icon"></i>
+                                <span class="skill-name">MikroTik Configuration</span>
+                            </div>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 65%"></div>
+                        </div>
+                        <p class="skill-desc">Routing, Firewall, Bandwidth Management (Queue), dan VPN Tunneling.</p>
+                    </div>
+
+                    <!-- Skill Item 3 -->
+                    <div class="skill-card reveal reveal-up">
+                        <div class="skill-info">
+                            <div class="skill-title-group">
+                                <i data-lucide="cable" class="skill-icon"></i>
+                                <span class="skill-name">OLT ZTE Management</span>
+                            </div>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 60%"></div>
+                        </div>
+                        <p class="skill-desc">Konfigurasi GPON, registrasi ONU, VLAN mapping, dan monitoring redaman optik.</p>
+                    </div>
+
+                    <!-- Skill Item 4 -->
+                    <div class="skill-card reveal reveal-up">
+                        <div class="skill-info">
+                            <div class="skill-title-group">
+                                <i data-lucide="binary" class="skill-icon"></i>
+                                <span class="skill-name">IP Subnetting</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 75%"></div>
+                        </div>
+                        <p class="skill-desc">Alokasi IP efisien menggunakan metode VLSM dan CIDR untuk optimasi jaringan.</p>
+                    </div>
+
+                    <!-- Skill Item 5 -->
+                    <div class="skill-card reveal reveal-up">
+                        <div class="skill-info">
+                            <div class="skill-title-group">
+                                <i data-lucide="cpu" class="skill-icon"></i>
+                                <span class="skill-name">PC Hardware Assembly</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Pemilihan komponen, perakitan PC, manajemen kabel, dan troubleshooting hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-subtitle">// 03. PROJECTS</span>
+                    <h2 class="section-title">Proyek Saya</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00f0ff?text=Project+1" alt="Project 1" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="folder-open" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 1</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00ff87?text=Project+2" alt="Project 2" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="server" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 2</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00f0ff?text=Project+3" alt="Project 3" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="network" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 3</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00ff87?text=Project+4" alt="Project 4" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="cpu" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 4</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00f0ff?text=Project+5" alt="Project 5" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="shield" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 5</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card glass-card reveal reveal-scale">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="https://placehold.co/600x400/0a1120/00ff87?text=Project+6" alt="Project 6" class="project-image">
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="database" class="project-icon"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub Repository">
+                                    <i data-lucide="github" class="link-icon"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nama Proyek 6</h3>
+                        <p class="project-desc">
+                            Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang digunakan dan tujuan dari proyek tersebut.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minat & Hobi (Interests) Section -->
+        <section id="interests" class="interests-section">
+            <div class="section-container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-subtitle">// 04. PASSIONS</span>
+                    <h2 class="section-title">Minat & Hobi</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="interests-grid">
+                    <!-- Card 1: Gaming -->
+                    <div class="interest-card glass-card reveal reveal-fade-scale">
+                        <div class="card-glow"></div>
+                        <div class="interest-image-wrapper">
+                            <img src="https://placehold.co/400x300/0a1120/00f0ff?text=Gaming" alt="Gaming" class="interest-image">
+                        </div>
+                        <div class="interest-icon-wrapper">
+                            <i data-lucide="gamepad-2" class="interest-icon"></i>
+                        </div>
+                        <h3 class="interest-title">Gaming</h3>
+                        <p class="interest-desc">
+                            Eksplorasi game dengan tingkat kesulitan tinggi dan dunia yang imersif. Sangat menyukai tantangan mekanis dan narasi mendalam di game seperti <strong class="accent">Sekiro</strong>, <strong class="accent">Elden Ring</strong>, dan atmosfer futuristik <strong class="accent">Cyberpunk 2077</strong>.
+                        </p>
+                        <div class="interest-tags">
+                            <span class="tag">RPG</span>
+                            <span class="tag">Soulsborne</span>
+                            <span class="tag">Sci-Fi</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Hardware -->
+                    <div class="interest-card glass-card reveal reveal-fade-scale">
+                        <div class="card-glow"></div>
+                        <div class="interest-image-wrapper">
+                            <img src="https://placehold.co/400x300/0a1120/00ff87?text=Hardware" alt="Hardware" class="interest-image">
+                        </div>
+                        <div class="interest-icon-wrapper">
+                            <i data-lucide="wrench" class="interest-icon"></i>
+                        </div>
+                        <h3 class="interest-title">Hardware</h3>
+                        <p class="interest-desc">
+                            Mengulik arsitektur PC modern dan mengikuti perkembangan teknologi semikonduktor. Memiliki ketertarikan khusus pada ekosistem komponen <strong class="accent">Komponen Komputer</strong> (TSMC Semikonduktor) serta optimasi performa hardware.
+                        </p>
+                        <div class="interest-tags">
+                            <span class="tag">AMD</span>
+                            <span class="tag">PC Builder</span>
+                            <span class="tag">Overclocking</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Fitness -->
+                    <div class="interest-card glass-card reveal reveal-fade-scale">
+                        <div class="card-glow"></div>
+                        <div class="interest-image-wrapper">
+                            <img src="https://placehold.co/400x300/0a1120/00f0ff?text=Fitness" alt="Fitness" class="interest-image">
+                        </div>
+                        <div class="interest-icon-wrapper">
+                            <i data-lucide="dumbbell" class="interest-icon"></i>
+                        </div>
+                        <h3 class="interest-title">Fitness</h3>
+                        <p class="interest-desc">
+                            Menjaga keseimbangan antara kesehatan mental dan fisik melalui rutinitas olahraga yang disiplin. Berfokus pada latihan beban <strong class="accent">UpperBody</strong> untuk kekuatan badan atas dan <strong class="accent">LowerBody</strong> untuk ketahanan serta kontrol tubuh.
+                        </p>
+                        <div class="interest-tags">
+                            <span class="tag">Gym</span>
+                            <span class="tag">Calisthenics</span>
+                            <span class="tag">Healthy Life</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-subtitle">// 05. CONNECTION</span>
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-grid reveal reveal-fade-scale">
+                    <div class="contact-info-panel">
+                        <h3 class="contact-panel-title">Mari Berkolaborasi</h3>
+                        <p class="contact-panel-desc">
+                            Apakah Anda memiliki proyek jaringan, kebutuhan perakitan PC, atau ingin berdiskusi seputar teknologi Sistem Komputer? Silakan hubungi saya melalui kontak berikut.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:rangga@example.com" class="contact-value">rangganugraha0428@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <div class="contact-text">
+                                    <span class="contact-label">Lokasi</span>
+                                    <span class="contact-value">Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Izaac28" class="social-btn" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+        </svg>
+    </a>
+                            <a href="https://www.instagram.com/izaac_el/" class="social-btn" target="_blank" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+        </svg>
+    </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-panel">
+                        <form class="contact-form" onsubmit="kirimKeTelegram(event)">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Alamat Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea id="message" class="form-input form-textarea" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" id="btnKirim" class="btn btn-primary btn-submit">
+                                <span id="teksTombol">Kirim Pesan</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Rangga Nugraha. All rights reserved.</p>
+            <p class="footer-tech">Built with <span class="accent">HTML</span>, <span class="accent">CSS</span>, & <span class="accent">Vanilla JS</span></p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+<script>
+async function kirimKeTelegram(event) {
+  event.preventDefault(); // Mencegah web reload pas tombol di-klik
+
+  // Menangkap isi dari 3 kotak input milik lu
+  const inputNama = document.getElementById('name').value;
+  const inputEmail = document.getElementById('email').value;
+  const inputPesan = document.getElementById('message').value;
+
+  const tombol = document.getElementById('btnKirim');
+  const teksTombol = document.getElementById('teksTombol');
+
+  // Mengubah tampilan tombol pas lagi diproses
+  tombol.disabled = true;
+  tombol.style.opacity = "0.5";
+  teksTombol.innerText = "⏳ Mengirim ke HP Rangga...";
+
+  try {
+    const respon = await fetch('/api/kirim-pesan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        nama: inputNama, 
+        email: inputEmail, 
+        pesan: inputPesan 
+      })
+    });
+
+    const hasil = await respon.json();
+
+    if (hasil.sukses) {
+      alert("your massage sent a telegram.");
+      
+      // Kosongkan form setelah sukses terkirim
+      document.getElementById('name').value = "";
+      document.getElementById('email').value = "";
+      document.getElementById('message').value = "";
+    } else {
+      alert("Fail send a massage. try again later....");
+    }
+  } catch (error) {
+    alert("Ubuntu server during offline!");
+  } finally {
+    // Kembalikan tombol ke kondisi semula
+    tombol.disabled = false;
+    tombol.style.opacity = "1";
+    teksTombol.innerText = "Kirim Pesan";
+  }
+}
+</script>
+</html>

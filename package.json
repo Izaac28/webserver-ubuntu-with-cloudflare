@@ -1,0 +1,23 @@
+{
+  "name": "web-personal",
+  "version": "1.0.0",
+  "description": "web",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Izaac28/web-personal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Izaac28/web-personal/issues"
+  },
+  "homepage": "https://github.com/Izaac28/web-personal#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
